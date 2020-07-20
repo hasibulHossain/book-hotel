@@ -1,0 +1,83 @@
+.gallery {
+    display: flex;
+
+    &__item {
+
+    }
+
+    &__photo {
+        width: 100%;
+        display: block;
+    }
+}
+
+//overview
+
+.overview {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--grey-light-3);
+
+    &__head {
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 2.2rem;
+        word-spacing: 1px;
+        padding: 1.5rem 1.5rem;
+    }
+
+    &__stars {
+        display: flex;
+        margin-right: auto;
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        fill: var(--color-primary);
+    }
+
+    &__location {
+        display: flex;
+        align-items: center;
+        margin-right: 4rem;
+    }
+
+    &__location:active svg {
+        fill: var(--grey-dark-2);
+    }
+
+    &__location-btn {
+        border: none;
+        border-bottom: 1px solid currentColor;
+        color: var(--color-primary);
+        background-color: transparent;
+        cursor: pointer;
+        transition: all 0.1s;
+        
+        &:active {
+            color: var(--grey-dark-2);
+        }
+    }
+
+    &__rating {
+        background-color: var(--color-primary);
+        align-self: stretch;
+        padding: 0 2rem;
+        color: var(--grey-light-1);
+        font-weight: 300;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; 
+    }
+
+    &__rating-avarage {
+        font-size: 2.3rem;
+    }
+
+    &__rating-count {
+        font-size: 1.4rem; 
+    }
+}

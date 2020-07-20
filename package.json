@@ -1,0 +1,27 @@
+{
+  "name": "trillo",
+  "version": "1.0.0",
+  "description": "landing-page-for-trillo-app",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch",
+    
+    "compile": "node-sass sass/main.scss css/style.comp.css",
+    "compress": "node-sass css/style.comp.css css/style.css --output-style compressed",
+    "build": "npm-run-all compile compress"
+  },
+  "author": "hasib",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.5",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.1"
+  }
+}
