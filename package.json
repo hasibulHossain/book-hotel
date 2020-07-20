@@ -1,4 +1,5 @@
 {
+  "homepage": "https://hasibulHossain.github.com/appburger",
   "name": "trillo",
   "version": "1.0.0",
   "description": "landing-page-for-trillo-app",
@@ -10,7 +11,8 @@
     
     "compile": "node-sass sass/main.scss css/style.comp.css",
     "compress": "node-sass css/style.comp.css css/style.css --output-style compressed",
-    "build": "npm-run-all compile compress"
+    "build": "npm-run-all compile compress",
+    "deploy": "gh-pages -d build"
   },
   "author": "hasib",
   "license": "ISC",
